@@ -20,7 +20,8 @@ const app = () => {
   const links = document.querySelectorAll('a');
   const searchBox = document.querySelector('#search');
   
-  searchBox.addEventListener('keyup', (event) => {
+  searchBox.addEventListener('input', (event) => {
+    console.log('change triggered: ', event.target.value)
     handleSearch(event, links);
   });
 };
