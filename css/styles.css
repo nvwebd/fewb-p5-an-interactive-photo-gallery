@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 30px auto;
+  max-width: 1030px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: grid;
+  margin-bottom: 25px;
+}
+
+header label {
+  display: none;
+}
+
+header input {
+  width: 100%;
+  max-width: 510px;
+  margin: auto;
+  height: 45px;
+  border: 2px solid #DDD;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+}
+
+main a img {
+  border-radius: 5px;
+}
