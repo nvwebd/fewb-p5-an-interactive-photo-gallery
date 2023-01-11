@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
 });
 
 const handleSearch = (event, nodeList) => {
-  const searchValue = event.target.value;
+  const searchValue = event.target.value.toLowerCase();
   
   nodeList.forEach(node => {
     let nodeDataCaption = node.getAttribute('data-caption').toLowerCase();
